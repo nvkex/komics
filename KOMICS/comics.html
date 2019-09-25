@@ -1,0 +1,137 @@
+<!--
+	author: @nvkex
+-->
+<!DOCTYPE html>
+<html>
+	<link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/kmain.js"></script>
+	<head>
+		<title>KOMICS</title>
+	</head>
+	<style>
+		.polaroid{
+			height:320px;
+			width:380px;
+			border:0px solid grey;
+		}
+		.polaroid img{
+			height:215px;
+			width:100%;
+		}
+		.polaroid p{
+			padding-left: 20px;
+			text-align: left;
+		}
+		.polaroid:hover .genre-name{
+			letter-spacing: 4px;
+			color:#3366ff;
+			font-weight: bold;
+		}
+		.polaroid:hover .founded-on{
+			letter-spacing: 4px;
+		}
+		.genre-name{
+			transition: font-weight 0.1s, letter-spacing 0.8s;
+			color:black;
+		}
+		.founded-on{
+			transition: letter-spacing 0.8s;
+			font-style: italic;
+			color: grey;
+		}
+	</style>
+
+	<body id="bod">
+		<div class="header">
+			<a href="index.html" style=" background-color: #006080; font-size: 20px;">
+				<i class="fa fa-home"></i>
+			</a>
+			<div class="header-r">
+				<div class="drpdwn">
+					<button class="dropbtn">
+      					<a href="#"><i class="fa fa-user fa-fw"></i> GUEST&nbsp;&nbsp; <i class="fa fa-caret-down"></i></a>
+      				</button>
+      				<div class="dropdown-content" align = "center">
+      					<a href="login.html"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Login</a>
+      					<a href="signup.html"><i class="fa fa-pencil fa-fw"></i>&nbsp; Sign Up</a>
+    				</div>
+				</div>
+				<a href="comics.html">COMICS</a>
+				<a href="manga.html">MANGA</a>
+				<a href="anime.html">ANIME</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</div>
+		<div onclick="openNav()" id="sidePanel" class="side-panel">
+			<div id="sideHandle" class="side-handle">☰</div>
+			<p>Comics</p>
+		</div>
+		<br>
+		<div align="center">
+			<table cellpadding = "1" cellspacing = "40">
+			<tr>
+				<td>
+					<div class="polaroid">
+						<a href="marvel.html">
+							<img src="src/comics/marvel/logo.png">
+							<p class="genre-name">Marvel</p>
+							<p class="founded-on">1939</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/dc/logo.jpg">
+							<p class="genre-name">D.C.</p>
+							<p class="founded-on">1967</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/imagecomics/logo.jpg">
+							<p class="genre-name">Image Comics</p>
+							<p class="founded-on">1992</p>
+						</a>
+					</div>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					<div class="polaroid">
+						<a href="pop-cartoons.html">
+							<img src="src/comics/popcom/pbs.jpg">
+							<p class="genre-name">Pop Comics</p>
+							<p class="founded-on">20th Century</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/dhcomics/logo.jpg">
+							<p class="genre-name">Dark Horse Comics</p>
+							<p class="founded-on">1986</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/aspencomics/logo.png">
+							<p class="genre-name">Aspen Comics</p>
+							<p class="founded-on">2003</p>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

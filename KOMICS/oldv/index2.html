@@ -1,0 +1,119 @@
+<!--
+	author: @nvkex
+-->
+<!DOCTYPE html>
+<html>
+	<link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<title>KOMICS</title>
+	</head>
+	<script>
+ 		function highlight(x) {  
+ 			var h = 400;
+ 			var w = 400;
+  			var id = setInterval(frame , 1);
+ 			 	function frame() {
+    				if (h == 450) {
+      					clearInterval(id);
+    				} 
+    				else {
+      					h+=2;
+      					w+=2; 
+      					x.style.height = h + "px"; 
+      					x.style.width = w + "px"; 
+    				}
+  			}	
+ 			//x.style.height="420px";
+ 			//x.style.width="480px";
+		}
+		function revert(x){
+			var h = 450;
+ 			var w = 450;
+  			var id = setInterval(frame , 0.01);
+ 			 	function frame() {
+    				if (h == 400) {
+      					clearInterval(id);
+    				} 
+    				else {
+      					h-=2;
+      					w-=2; 
+      					x.style.height = h + "px"; 
+      					x.style.width = w + "px"; 
+    				}
+  			}	
+		}
+	</script>
+
+	<body id="bod">
+		<div class="header">
+			<a class = "nav" href="#" style="font-size: 20px;">
+				<img src="https://img.icons8.com/android/24/000000/menu.png">
+			</a>
+			<a href="index.html" style=" background-color: #008040; font-size: 20px;">
+				<i class="fa fa-home"></i>
+			</a>
+			<div class="header-r">
+				<div class="drpdwn">
+					<button class="dropbtn">
+      					<a href="#"><i class="fa fa-user fa-fw"></i> GUEST <i class="fa fa-caret-down"></i></a>
+      				</button>
+      				<div class="dropdown-content" align = "center">
+      					<a href="login.html"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Login</a>
+      					<a href="signup.htm"><i class="fa fa-pencil fa-fw"></i> Sign Up</a>
+    				</div>
+				</div>
+				<a href="comics.html">COMICS</a>
+				<a href="manga.html">MANGA</a>
+				<a href="anime.html">ANIME</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</div>
+		<br>
+		<table align = "center" cellpadding = "10" cellspacing = "100">
+			<tr>
+				<td>
+					<div class = "polaroid" onmouseover = "highlight(this);" onmouseleave = "revert(this)" >
+						<a href="comics.html">
+							<img src = "src/comics.jpg" width = "100%">
+							<p class="des">COMICS</p> 
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid" onmouseover="highlight(this);" onmouseleave="revert(this)">
+						<a href="anime.html">
+							<img src="src/anime.jpg" width="100%">
+							<p class="des">ANIME</p>
+						</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="polaroid" onmouseover="highlight(this);" onmouseleave="revert(this)">
+						<a href="manga.html">
+							<img src="src/manga.jpg" width="100%">
+							<p class="des">MANGA</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid" onmouseover="highlight(this);" onmouseleave="revert(this)">
+						<a href="live_act.html">
+							<img src="src/livact.jpg" width="100%">
+							<p class="des">LIVE ACTIONS</p>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<div class="footer" align="center">
+			<div class="logo" >
+				<a href="#bod"><img src="src/logo.png" width="100%"></a>
+			</div>
+		</div>
+	</body>
+</html>
