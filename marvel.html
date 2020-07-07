@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Komics</title>
+	</head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main-style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Livvic|Nanum+Gothic|Open+Sans+Condensed:300|Quicksand|Titillium+Web&display=swap" rel="stylesheet">
+	<script src="js/kmain.js"></script>
+	<style>
+
+		.polaroid{
+			height: 440px;
+			width: 225px;
+		}
+		.polaroid img{
+			width:100%;
+		}
+		.polaroid p{
+			padding-left: 18px;
+			padding-right: 18px;
+			text-align: left;
+		}
+		.polaroid:hover .comic-name{
+			letter-spacing: 3px;
+			color:#3366ff;
+			font-weight: bold;
+		}
+		.polaroid:hover .author-name{
+			letter-spacing: 3px;
+		}
+		.comic-name{
+			font-size: 14px;
+			transition: font-weight 0.1s, letter-spacing 0.8s;
+			color:black;
+		}
+		.author-name{
+			font-size: 12px;
+			transition: letter-spacing 0.8s;
+			font-style: italic;
+			color: grey;
+		}
+	</style>
+	<body>
+		<div class="header">
+			<a href="index.html" style=" background-color:#009973; font-size: 20px;">
+				<i class="fa fa-home"></i>
+			</a>
+			<div class="header-r">
+				<div class="drpdwn">
+					<button class="dropbtn">
+      					<a href="#"><i class="fa fa-user fa-fw"></i> GUEST <i class="fa fa-caret-down"></i></a>
+      				</button>
+      				<div class="dropdown-content" align = "center">
+      					<a href="login.html"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Login</a>
+      					<a href="signup.html"><i class="fa fa-pencil fa-fw"></i> Sign Up</a>
+    				</div>
+				</div>
+				<a href="comics.html">COMICS</a>
+				<a href="manga.html">MANGA</a>
+				<a href="anime.html">ANIME</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</div>
+		<div onclick="openNav()" id="sidePanel" class="side-panel">
+			<div id="sideHandle" class="side-handle">☰</div>
+			<p>Marvel</p>
+		</div>
+		<br>
+		<div align = "center">
+			<table cellpadding = "1" cellspacing = "40">
+
+<!-- TABLE ROW - 1 -->
+				<tr>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/78510/thanos_2019_5">
+								<img src="src/comics/marvel/thanos_5.jpg">
+								<p class="comic-name">Thanos #5</p>
+								<p class="author-name">Howard & Olivetti</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/78438/fantastic_four_4_yancy_street_2019_1">
+								<img src="src/comics/marvel/ff_4ys_1.jpg">
+								<p class="comic-name">Fantastic Four: 4 Yancy Street #1</p>
+								<p class="author-name">Duggan, Perez</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/78247/immortal_hulk_directors_cut_2019_2">
+								<img src="src/comics/marvel/ih_dc_2.jpg">
+								<p class="comic-name">Immortal hulk Director's Cut #2</p>
+								<p class="author-name"></p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/78181/amazing_spider-man_venom_3d_2019_1">
+								<img src="src/comics/marvel/asm_v_3d_1.jpg">
+								<p class="comic-name">Amazing Spider-Man: Venom 3D #1</p>
+								<p class="author-name">Michelinie, Mcfarlane</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/77064/absolute_carnage_miles_morales_2019_1">
+								<img src="src/comics/marvel/ac_mm_1.jpg">
+								<p class="comic-name">Absolute Carnage: Miles Morales #1</p>
+								<p class="author-name">Ahmed, Vicentini</p>
+							</a>
+						</div>
+					</td>
+				</tr>
+<!-- TABLE ROW - 2 -->
+				<tr>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/77061/absolute_carnage_lethal_protectors_2019_1">
+								<img src="src/comics/marvel/ac_lp_1.jpg">
+								<p class="comic-name">Absolute Carnage: Lethal Protectors #1</p>
+								<p class="author-name">Tieri, F Flaviano</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/77000/marvel_monsters_2019_1">
+								<img src="src/comics/marvel/mm_1.jpg">
+								<p class="comic-name">Marvel Monsters #1</p>
+								<p class="author-name">Bunn, Crain</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/76953/she-hulk_annual_2019_1">
+								<img src="src/comics/marvel/sa_1.jpg">
+								<p class="comic-name">She-Hulk Annual #1</p>
+								<p class="author-name">Macdonald, Andolfo</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/76339/power_pack_grow_up_2019_1">
+								<img src="src/comics/marvel/pp_gu_1.jpg">
+								<p class="comic-name">Power Pack: Grow Up! #1</p>
+								<p class="author-name">Simonson, Brigman</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/76175/marvels_spider-man_velocity_2019_1">
+								<img src="src/comics/marvel/msm_v_1.jpg">
+								<p class="comic-name">Marvel's Spider-Man: Velocity #1</p>
+								<p class="author-name">S' SKAN</p>
+							</a>
+						</div>
+					</td>
+				</tr>
+<!-- TABLE ROW - 3 -->
+				<tr>
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/76014/absolute_carnage_2019_2">
+								<img src="src/comics/marvel/ac_2.jpg">
+								<p class="comic-name">Absolute Carnage #2</p>
+								<p class="author-name">Cates, Stegman</p>
+							</a>
+						</div>
+					</td>
+
+					<td>
+						<div class="polaroid">
+							<a href="https://www.marvel.com/comics/issue/75601/ms_marvel_team-up_2019_5">
+								<img src="src/comics/marvel/mm_tu_5.jpg">
+								<p class="comic-name">Ms. Marvel Team-Up #5</p>
+								<p class="author-name">The McElroys, Guara</p>
+							</a>
+						</div>
+					</td>
+
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

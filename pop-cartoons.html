@@ -1,0 +1,137 @@
+<!--
+	author: @nvkex
+-->
+<!DOCTYPE html>
+<html>
+	<link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<title>KOMICS</title>
+	</head>
+	<script src="js/kmain.js"></script>
+	<style>
+		.polaroid{
+			height:340px;
+			width:380px;
+			border:0px solid grey;
+		}
+		.polaroid img{
+			width:100%;
+		}
+		.polaroid p{
+			padding-left: 20px;
+			text-align: left;
+		}
+		.polaroid:hover .comic-name{
+			letter-spacing: 4px;
+			color:#3366ff;
+			font-weight: bold;
+		}
+		.polaroid:hover .author-name{
+			letter-spacing: 4px;
+		}
+		.comic-name{
+			transition: font-weight 0.1s, letter-spacing 0.8s;
+			color:black;
+		}
+		.author-name{
+			transition: letter-spacing 0.8s;
+			font-style: italic;
+			color: grey;
+		}
+	</style>
+
+	<body id="bod">
+		<div class="header">
+			<a href="index.html" style=" background-color: #006080; font-size: 20px;">
+				<i class="fa fa-home"></i>
+			</a>
+			<div class="header-r">
+				<div class="drpdwn">
+					<button class="dropbtn">
+      					<a href="#"><i class="fa fa-user fa-fw"></i> GUEST <i class="fa fa-caret-down"></i></a>
+      				</button>
+      				<div class="dropdown-content" align = "center">
+      					<a href="login.html"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Login</a>
+      					<a href="signup.html"><i class="fa fa-pencil fa-fw"></i>&nbsp; Sign Up</a>
+    				</div>
+				</div>
+				<a href="comics.html">COMICS</a>
+				<a href="manga.html">MANGA</a>
+				<a href="anime.html">ANIME</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</div>
+		<div onclick="openNav()" id="sidePanel" class="side-panel">
+			<div id="sideHandle" class="side-handle">☰</div>
+			<p>Pop Cartoons</p>
+		</div>
+		<br>
+		<div align="center">
+			<br><br><br>
+			<table cellpadding = "1" cellspacing = "40">
+			<tr>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/popcom/hobbs.jpg">
+							<p class="comic-name">Calvin and Hobbes</p>
+							<p class="author-name">Bill Watterson</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/popcom/bc.jpg">
+							<p class="comic-name">B.C.</p>
+							<p class="author-name">Mastroianni and Hart</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/popcom/garfield.jpg">
+							<p class="comic-name">Garfield</p>
+							<p class="author-name">Jim Davis</p>
+						</a>
+					</div>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/popcom/pbs.jpg">
+							<p class="comic-name">Pearls Before Swine</p>
+							<p class="author-name">Stephan Pastis</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/popcom/peanuts.jpg">
+							<p class="comic-name">Peanuts</p>
+							<p class="author-name">Charles Schulz</p>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div class="polaroid">
+						<a href="#">
+							<img src="src/comics/popcom/non-sequiter.jpg">
+							<p class="comic-name">Non Sequiter</p>
+							<p class="author-name">Wiley Miller</p>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>
